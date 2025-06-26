@@ -257,8 +257,8 @@ if(true){
 
 }
 
-
-let hour = 16;
+let time = new Date 
+let hour = time.getHours();
 if(hour >= 1 && hour <= 6){
     console.log("early morning");
     
@@ -274,3 +274,212 @@ if(hour >= 1 && hour <= 6){
     console.log("good night");
     
 }
+console.log(hour);
+
+// nested if example 
+
+
+let age = 25;
+let weight =50;
+let height = 150;
+
+if(age>=18 && age<=25){
+    if(weight>=50){
+        if(height>=150){
+            console.log("your form submitted and your eligible")
+        }else{
+            console.log("your height is not eligible");
+            
+        }
+    }else{
+        console.log("your weight is not eligible.");
+        
+    }
+}else{
+    console.log("your age is not eligible");
+    
+}
+
+
+// ternary operator 
+
+// condition ? "statement" : "statement"
+
+// let age1 = prompt("enter your aget")
+
+// age1>=18 ? alert("eligible for vote") : alert("not eligible for vote");
+// ;
+
+
+// switch 
+
+// explain 
+
+// switch(){
+//     case value : statement ; break;
+//     case value : statement ; break;
+// }
+
+let trafficLight = "blue"
+
+switch(trafficLight){
+    case "red" : console.log("stop");break;
+    case "yellow" : console.log("start"); break;
+    case "green" : console.log("go"); break
+    case "" : console.log("go on the flow");break;
+}
+
+// looping statement 
+
+
+// 1. for loop explain :
+
+// for (initialization , condition , iteration){
+
+// }
+
+// example : -
+
+// for(let i=0;i<=10;i++){
+//     console.log(i+"*2 = "+ i*2);  
+// }
+
+// while loop 
+// initialization
+// while(condition){
+//     statement
+//     iteration
+// }
+
+let vile = 0
+
+while(vile >=1){
+    console.log(vile);
+    vile-- 
+}
+
+
+// initizalation
+// do{
+//     console.log(num);num++
+    
+// }
+// while(condition)
+
+// let num=prompt("enter you age :-",0);
+// do{
+//     alert(`your age doesn't enough try later, your age just :-${num}`);num++
+    
+// }
+// while(num>=18)
+
+// for of , for in
+
+// let a = [1,2,3,4,5]
+
+// for(let vignesh of a){
+//     console.log(vignesh*2);
+    
+// }
+
+// for(let vignesh in a){
+//     console.log(a[vignesh]);
+    
+// }
+
+// let a = [2,3,4,5,6,7,9,8]
+
+// for(let i=0;i<=a.length;i++){
+//    if(a[i]){
+//     if(a[i]===9){
+//         continue
+//     }
+//     console.log(a[i]);
+//    }
+// }
+
+
+function one(a,b=200){
+  console.log(a*b);
+}
+
+one(10,1)
+
+function userData(uName,Uage=56){
+   return uName+" "+Uage
+}
+
+var a = userData("kamal")
+console.log(a);
+
+
+
+// var
+// let 
+// const
+
+// 1. function scope || global scope
+// 2.block scope
+// 3.block scope
+
+
+
+var gScope = "var"
+let Bscope = "let"
+const bScope = "const"
+
+console.log(window.gScope);
+console.log(window.bScope);
+console.log(window.Bscope);
+
+
+var a=10
+let b= 20
+const c= 30
+
+console.log(a+b+c);
+
+
+function accessLocalVar(){
+    let  a=100
+    const b=200
+    var c=300
+    
+    
+}
+
+accessLocalVar()
+
+
+
+// function types 
+
+
+// named function 
+
+function name1(a,b){
+    console.log("named function");
+    
+}
+name1()
+
+// annonymous function 
+
+
+var name2 = function(a,b){
+    console.log("annoymous function");
+    
+}
+name2()
+
+// arrow function 
+
+var name3 =(a,b) => {
+    console.log("arrow function");
+    
+}
+name3()
+
+
+
+
