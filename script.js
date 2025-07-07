@@ -222,83 +222,83 @@
 
 // 1. explain 
 
-if (false) {
-    console.log("hi")
-}
+// if (false) {
+//     console.log("hi")
+// }
 
-if(false){
-    console.log("hello")
-}else{
-    console.log("namste")
-}
+// if(false){
+//     console.log("hello")
+// }else{
+//     console.log("namste")
+// }
 
-if(false){
-  console.log("1");
+// if(false){
+//   console.log("1");
   
-}else if(0){
- console.log("2");
+// }else if(0){
+//  console.log("2");
  
-}else{
-    console.log("3");
+// }else{
+//     console.log("3");
     
-}
+// }
 
-if(true){
-    if(true){
-        if(true){
-            console.log("selected")
-        }else{
+// if(true){
+//     if(true){
+//         if(true){
+//             console.log("selected")
+//         }else{
 
-        }
-    }else{
+//         }
+//     }else{
 
-    }
-}else{
+//     }
+// }else{
 
-}
+// }
 
-let time = new Date 
-let hour = time.getHours();
-if(hour >= 1 && hour <= 6){
-    console.log("early morning");
+// let time = new Date 
+// let hour = time.getHours();
+// if(hour >= 1 && hour <= 6){
+//     console.log("early morning");
     
-}else if(hour >= 7 && hour <= 12){
-    console.log("morning")
-}else if(hour >= 13 && hour <= 15){
-    console.log("afternoon");
+// }else if(hour >= 7 && hour <= 12){
+//     console.log("morning")
+// }else if(hour >= 13 && hour <= 15){
+//     console.log("afternoon");
     
-}else if(hour >= 16 && hour <= 18){
-    console.log("evening");
+// }else if(hour >= 16 && hour <= 18){
+//     console.log("evening");
     
-}else{
-    console.log("good night");
+// }else{
+//     console.log("good night");
     
-}
-console.log(hour);
+// }
+// console.log(hour);
 
 // nested if example 
 
 
-let age = 25;
-let weight =50;
-let height = 150;
+// let age = 25;
+// let weight =50;
+// let height = 150;
 
-if(age>=18 && age<=25){
-    if(weight>=50){
-        if(height>=150){
-            console.log("your form submitted and your eligible")
-        }else{
-            console.log("your height is not eligible");
+// if(age>=18 && age<=25){
+//     if(weight>=50){
+//         if(height>=150){
+//             console.log("your form submitted and your eligible")
+//         }else{
+//             console.log("your height is not eligible");
             
-        }
-    }else{
-        console.log("your weight is not eligible.");
+//         }
+//     }else{
+//         console.log("your weight is not eligible.");
         
-    }
-}else{
-    console.log("your age is not eligible");
+//     }
+// }else{
+//     console.log("your age is not eligible");
     
-}
+// }
 
 
 // ternary operator 
@@ -320,14 +320,14 @@ if(age>=18 && age<=25){
 //     case value : statement ; break;
 // }
 
-let trafficLight = "blue"
+// let trafficLight = "blue"
 
-switch(trafficLight){
-    case "red" : console.log("stop");break;
-    case "yellow" : console.log("start"); break;
-    case "green" : console.log("go"); break
-    case "" : console.log("go on the flow");break;
-}
+// switch(trafficLight){
+//     case "red" : console.log("stop");break;
+//     case "yellow" : console.log("start"); break;
+//     case "green" : console.log("go"); break
+//     case "" : console.log("go on the flow");break;
+// }
 
 // looping statement 
 
@@ -351,12 +351,12 @@ switch(trafficLight){
 //     iteration
 // }
 
-let vile = 0
+// let vile = 0
 
-while(vile >=1){
-    console.log(vile);
-    vile-- 
-}
+// while(vile >=1){
+//     console.log(vile);
+//     vile-- 
+// }
 
 
 // initizalation
@@ -399,18 +399,18 @@ while(vile >=1){
 // }
 
 
-function one(a,b=200){
-  console.log(a*b);
-}
+// function one(a,b=200){
+//   console.log(a*b);
+// }
 
-one(10,1)
+// one(10,1)
 
-function userData(uName,Uage=56){
-   return uName+" "+Uage
-}
+// function userData(uName,Uage=56){
+//    return uName+" "+Uage
+// }
 
-var a = userData("kamal")
-console.log(a);
+// var a = userData("kamal")
+// console.log(a);
 
 
 
@@ -424,31 +424,31 @@ console.log(a);
 
 
 
-var gScope = "var"
-let Bscope = "let"
-const bScope = "const"
+// var gScope = "var"
+// let Bscope = "let"
+// const bScope = "const"
 
-console.log(window.gScope);
-console.log(window.bScope);
-console.log(window.Bscope);
-
-
-var a=10
-let b= 20
-const c= 30
-
-console.log(a+b+c);
+// console.log(window.gScope);
+// console.log(window.bScope);
+// console.log(window.Bscope);
 
 
-function accessLocalVar(){
-    let  a=100
-    const b=200
-    var c=300
+// var a=10
+// let b= 20
+// const c= 30
+
+// console.log(a+b+c);
+
+
+// function accessLocalVar(){
+//     let  a=100
+//     const b=200
+//     var c=300
     
     
-}
+// }
 
-accessLocalVar()
+// accessLocalVar()
 
 
 
@@ -457,29 +457,165 @@ accessLocalVar()
 
 // named function 
 
-function name1(a,b){
-    console.log("named function");
+// function name1(a,b){
+//     console.log("named function");
     
-}
-name1()
+// }
+// name1()
 
 // annonymous function 
 
 
-var name2 = function(a,b){
-    console.log("annoymous function");
+// var name2 = function(a,b){
+//     console.log("annoymous function");
     
-}
-name2()
+// }
+// name2()
 
 // arrow function 
 
-var name3 =(a,b) => {
-    console.log("arrow function");
+// var name3 =(a,b) => {
+//     console.log("arrow function");
     
+// }
+// name3()
+
+
+
+
+// /
+
+// uncurrying function
+
+function add(a,b,c=20){
+    console.log(a+b+c)
+
 }
-name3()
+
+add(10,20);
+
+// currying function 
+
+function curryingAdd(a){
+    return function(b){
+        return function(c=50){
+            console.log(a+b+c);
+        }
+    }
+}
+
+curryingAdd(10)(20)(30);
+
+// self invoking function
+
+
+(function(name,age){
+    document.writeln(`hi ${name} your age is ${age}`);
+})("vignesh",20);
+
+
+// generator function
+
+function* abFunction() {
+    yield "first";
+    yield "second";
+    yield "third";
+    yield "fourth";
+}
+
+let gen = abFunction();
+
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next());
+// console.log(gen.next());
 
 
 
+// 
+
+// function* url(){
+//     yield "https://www.google.com";
+//     yield "https://www.facebook.com";
+//     yield "https://www.youtube.com";
+//     yield "https://www.instagram.com";
+// }
+
+// let genUrl = url();
+// console.log(genUrl.next().value);
+// console.log(genUrl.next().value);
+// console.log(genUrl.next().value);
+// console.log(genUrl.next().value);
+// console.log(genUrl.next().value); // undefined, as there are no more values to yield
+
+
+// dataStructues Array and objects
+
+// homogenous (same data type) and hetrogenous (different data type)
+
+// 1.array litral
+
+let arr = [1,2,3,4,5,"vignesh",,,{name:"vignesh",age:20}]
+
+console.log(arr[8]);
+
+// 2. array constructor/
+
+// let arr1 = new Array()
+
+// arr1[0]=10
+// arr1[1]=20
+// arr1[2]="hello"
+// arr1[3]=true
+// arr1[4]={name:"vignesh",age:20}
+
+// console.log(arr1);
+
+
+// // object 
+
+// let object1 = {
+//     uName  : "vignesh",
+//     uAge : 20,
+//     uGender : "male",
+//     eat : function(){
+//         console.log("eating food");
+//     },
+// }
+
+// console.log(object1.uName);
+// console.log(object1.uAge);
+// console.log(object1.uGender);
+// object1.eat();
+
+
+
+// let vechile = {
+//     "vType" : "car",
+//     "vName" : "audi",
+//     "vColor" : ["red", "blue", "black"],
+//     vYear : 2020
+// }
+
+// console.log(vechile.vName);
+// console.log(vechile["vType"]);
+// console.log(vechile["vColor"][0]);
+// console.log(vechile.vColor[1]);
+
+
+function getData(){
+let pName ="navin"
+let pAge = 20
+let id = document.getElementById("index").value;
+
+let person = {
+    name: pName,
+    age: pAge,
+    id: id,
+}
+
+console.log(person);
+
+}
 
