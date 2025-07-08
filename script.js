@@ -487,43 +487,43 @@
 
 // uncurrying function
 
-function add(a,b,c=20){
-    console.log(a+b+c)
+// function add(a,b,c=20){
+//     console.log(a+b+c)
 
-}
+// }
 
-add(10,20);
+// add(10,20);
 
 // currying function 
 
-function curryingAdd(a){
-    return function(b){
-        return function(c=50){
-            console.log(a+b+c);
-        }
-    }
-}
+// function curryingAdd(a){
+//     return function(b){
+//         return function(c=50){
+//             console.log(a+b+c);
+//         }
+//     }
+// }
 
-curryingAdd(10)(20)(30);
+// curryingAdd(10)(20)(30);
 
 // self invoking function
 
 
-(function(name,age){
-    document.writeln(`hi ${name} your age is ${age}`);
-})("vignesh",20);
+// (function(name,age){
+//     document.writeln(`hi ${name} your age is ${age}`);
+// })("vignesh",20);
 
 
 // generator function
 
-function* abFunction() {
-    yield "first";
-    yield "second";
-    yield "third";
-    yield "fourth";
-}
+// function* abFunction() {
+//     yield "first";
+//     yield "second";
+//     yield "third";
+//     yield "fourth";
+// }
 
-let gen = abFunction();
+// let gen = abFunction();
 
 // console.log(gen.next().value);
 // console.log(gen.next().value);
@@ -556,9 +556,9 @@ let gen = abFunction();
 
 // 1.array litral
 
-let arr = [1,2,3,4,5,"vignesh",,,{name:"vignesh",age:20}]
+// let arr = [1,2,3,4,5,"vignesh",,,{name:"vignesh",age:20}]
 
-console.log(arr[8]);
+// console.log(arr[8]);
 
 // 2. array constructor/
 
@@ -604,18 +604,174 @@ console.log(arr[8]);
 // console.log(vechile.vColor[1]);
 
 
-function getData(){
-let pName ="navin"
-let pAge = 20
-let id = document.getElementById("index").value;
+// function getData(){
+// let pName ="navin"
+// let pAge = 20
+// let id = document.getElementById("index").value;
 
-let person = {
-    name: pName,
-    age: pAge,
-    id: id,
+// let person = {
+//     name: pName,
+//     age: pAge,
+//     id: id,
+// }
+
+// console.log(person);
+
+// }
+
+
+// Array
+// String
+// Object
+// function
+
+
+// for loop 
+
+// Array
+
+let arr = [10,20,30,40]
+
+for(let i=0;i<7;i++){
+  console.log(arr[i]);
+  
 }
 
-console.log(person);
+
+// string 
+
+let str ="java script"
+
+for(let i=0;i<11;i++){
+  console.log(str[i]);
+}
+
+
+// for of loop 
+
+// Array,string,function 
+
+
+
+// Array \
+
+let arr1 = ["apple","banana","cherry","date","elderberry"];
+
+for(let vignesh of arr1){
+    console.log(vignesh);
+    
+}
+
+
+// string  
+
+let str1 = "hello world";
+
+for(let char of str1){
+    console.log(char+" "+"happy");
+    
+}
+
+
+// function 
+
+function*genFun(){
+    yield "first";
+    yield "second";
+    yield "third";
+    yield "fourth";
+}
+
+let gen = genFun();
+
+for(let extra of gen){
+    console.log(extra);
+    
+}
+
+
+
+
+// for in loop 
+
+// object 
+
+let person1 = {
+    uName : "vignesh",
+    hobbies : ["cricket","football","coding"],
+    family : {
+        totalMembers : 5,
+        Sibilings : ["a","b"]
+    },
+    walk(){
+        console.log("walking");
+    }
+}
+
+// es6 after
+
+// 1.spread operator
+// 2.rest operator
+
+
+// 1. spread operator 
+
+// array [...]
+
+// object {...}
+
+// *two array or object merge and clone.
+
+// 2 . rest operator 
+
+// function (...)
+
+// * function multiple and parameter store 
+
+
+// spread operator 
+
+let arr3 = ["apple","banana","cherry"];
+let arr4 = ["date","elderberry","fig","grape"];
+
+
+let arr5 = [...arr3,...arr4,"kiwi","lemon"];
+arr5[0] = "orange";
+arr5[1] = "graph";
+
+console.log(arr5);
+
+// object 
+
+let empDetials = {
+        empId : "E001",
+        empName : "John Doe",
+        empRole : "Software Engineer"
+}
+
+let empDetials1 ={
+    empId : "E002",
+    empName : "Jane Smith",
+    empRole : "Project Manager"
+}
+
+let empTotal = {
+    ...empDetials,
+    ...empDetials1,
+  
 
 }
 
+console.log(empTotal);
+
+
+// rest operator 
+
+// 1. function 
+
+function restoperator(...arr){
+    console.log(arr);
+    
+}
+
+restoperator(1,2,3,4,5,6,7,8,9,10);
