@@ -630,21 +630,21 @@
 
 // Array
 
-let arr = [10,20,30,40]
+// let arr = [10,20,30,40]
 
-for(let i=0;i<7;i++){
-  console.log(arr[i]);
+// for(let i=0;i<7;i++){
+//   console.log(arr[i]);
   
-}
+// }
 
 
 // string 
 
-let str ="java script"
+// let str ="java script"
 
-for(let i=0;i<11;i++){
-  console.log(str[i]);
-}
+// for(let i=0;i<11;i++){
+//   console.log(str[i]);
+// }
 
 
 // for of loop 
@@ -655,39 +655,39 @@ for(let i=0;i<11;i++){
 
 // Array \
 
-let arr1 = ["apple","banana","cherry","date","elderberry"];
+// let arr1 = ["apple","banana","cherry","date","elderberry"];
 
-for(let vignesh of arr1){
-    console.log(vignesh);
+// for(let vignesh of arr1){
+//     console.log(vignesh);
     
-}
+// }
 
 
 // string  
 
-let str1 = "hello world";
+// let str1 = "hello world";
 
-for(let char of str1){
-    console.log(char+" "+"happy");
+// for(let char of str1){
+//     console.log(char+" "+"happy");
     
-}
+// }
 
 
 // function 
 
-function*genFun(){
-    yield "first";
-    yield "second";
-    yield "third";
-    yield "fourth";
-}
+// function*genFun(){
+//     yield "first";
+//     yield "second";
+//     yield "third";
+//     yield "fourth";
+// }
 
-let gen = genFun();
+// let gen = genFun();
 
-for(let extra of gen){
-    console.log(extra);
+// for(let extra of gen){
+//     console.log(extra);
     
-}
+// }
 
 
 
@@ -696,17 +696,17 @@ for(let extra of gen){
 
 // object 
 
-let person1 = {
-    uName : "vignesh",
-    hobbies : ["cricket","football","coding"],
-    family : {
-        totalMembers : 5,
-        Sibilings : ["a","b"]
-    },
-    walk(){
-        console.log("walking");
-    }
-}
+// let person1 = {
+//     uName : "vignesh",
+//     hobbies : ["cricket","football","coding"],
+//     family : {
+//         totalMembers : 5,
+//         Sibilings : ["a","b"]
+//     },
+//     walk(){
+//         console.log("walking");
+//     }
+// }
 
 // es6 after
 
@@ -731,47 +731,194 @@ let person1 = {
 
 // spread operator 
 
-let arr3 = ["apple","banana","cherry"];
-let arr4 = ["date","elderberry","fig","grape"];
+// let arr3 = ["apple","banana","cherry"];
+// let arr4 = ["date","elderberry","fig","grape"];
 
 
-let arr5 = [...arr3,...arr4,"kiwi","lemon"];
-arr5[0] = "orange";
-arr5[1] = "graph";
+// let arr5 = [...arr3,...arr4,"kiwi","lemon"];
+// arr5[0] = "orange";
+// arr5[1] = "graph";
 
-console.log(arr5);
+// console.log(arr5);
 
 // object 
 
-let empDetials = {
-        empId : "E001",
-        empName : "John Doe",
-        empRole : "Software Engineer"
-}
+// let empDetials = {
+//         empId : "E001",
+//         empName : "John Doe",
+//         empRole : "Software Engineer"
+// }
 
-let empDetials1 ={
-    empId : "E002",
-    empName : "Jane Smith",
-    empRole : "Project Manager"
-}
+// let empDetials1 ={
+//     empId : "E002",
+//     empName : "Jane Smith",
+//     empRole : "Project Manager"
+// }
 
-let empTotal = {
-    ...empDetials,
-    ...empDetials1,
+// let empTotal = {
+//     ...empDetials,
+//     ...empDetials1,
   
 
-}
+// }
 
-console.log(empTotal);
+// console.log(empTotal);
 
 
 // rest operator 
 
 // 1. function 
 
-function restoperator(...arr){
-    console.log(arr);
+// function restoperator(...arr){
+//     console.log(arr);
     
-}
+// }
 
-restoperator(1,2,3,4,5,6,7,8,9,10);
+// restoperator(1,2,3,4,5,6,7,8,9,10);
+
+// destructuring 
+
+// es6 version after /
+
+// normal array 
+
+let arr = [10,20,30,40]
+
+let final = arr[3]
+
+console.log(final);
+
+// destructuring 
+
+let arr1 = [100,200,300,400]
+
+let [a,b,c,d] = arr1
+
+console.log(a,b,c,d);
+console.log(a,c);
+
+
+let arr2 = [10,20,30,40,100,200,300,400]
+
+let [a1,a2,a3,...e1]=arr2
+
+console.log(a1,a2,a3,e1);
+
+
+
+let arr3 = [10,20,30,[100,200,300]]
+
+let [b1,b2,b3,[c1,c2,c3]]=arr3
+
+console.log(b1,b2,b3,c1,c2,c3);
+
+// arr.method manipulate 
+
+
+// 1.push last add 
+// 2.pop last remove 
+// 3.shift first remove 
+// 4.unshift first add 
+// 5. splice
+
+
+let fruit = ["apple","orange","banana"]
+
+fruit.push("guava","pomagranate")
+console.log(fruit);
+
+let things = ["pencil","pen","paint","board"]
+
+things.pop()
+
+console.log(things);
+
+
+let fruits = ["banana","carrot"]
+
+fruits.unshift("apple","apple")
+
+console.log(fruits);
+
+fruits.shift()
+
+console.log(fruits);
+
+
+
+// splice 
+
+// splice(indexStarting,ending,adding)
+
+// let add = [100,200,300,400]
+
+// add.splice(0,2,10)
+
+// console.log(add);
+
+
+// -----------------manipulate 
+
+
+// merge array 
+
+// 1.concat 
+// 2.slice 
+// 3.flat 
+// 4.fill
+
+// concat 
+let array1 = [1,2,3,4]
+let array2 = [5,6,7,8]
+
+let newArr = array1.concat(array2)
+
+console.log(newArr);
+
+// slice 
+
+let array3 = [10,2,3,4,5]
+
+let sliceVal = array3.slice(1,5)
+
+console.log(sliceVal);
+
+// flat 
+
+let nestedArr = [1,[2,3,[4,[5,6]]]]
+
+let normalArr = nestedArr.flat(Infinity)
+
+console.log(normalArr);
+
+// fill 
+
+let  arrr = [10,20,30]
+arrr.fill("gdgdt",1,3)
+
+// fill(addingElement,si, Ei)
+
+console.log(arrr);
+
+
+// asscii value 
+
+// sort 
+// 1,111,111111111,2,3456,4,4,5,6,8
+let as = [5,4,6,2,8,1,111,11111111,3426,4,true," ","!"]
+
+as.sort() 
+console.log(as);
+
+
+// as.reverse()
+
+// console.log(as);
+
+
+
+
+
+
+
+
