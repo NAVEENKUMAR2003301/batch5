@@ -782,35 +782,35 @@
 
 // normal array 
 
-let arr = [10,20,30,40]
+// let arr = [10,20,30,40]
 
-let final = arr[3]
+// let final = arr[3]
 
-console.log(final);
+// console.log(final);
 
 // destructuring 
 
-let arr1 = [100,200,300,400]
+// let arr1 = [100,200,300,400]
 
-let [a,b,c,d] = arr1
+// let [a,b,c,d] = arr1
 
-console.log(a,b,c,d);
-console.log(a,c);
-
-
-let arr2 = [10,20,30,40,100,200,300,400]
-
-let [a1,a2,a3,...e1]=arr2
-
-console.log(a1,a2,a3,e1);
+// console.log(a,b,c,d);
+// console.log(a,c);
 
 
+// let arr2 = [10,20,30,40,100,200,300,400]
 
-let arr3 = [10,20,30,[100,200,300]]
+// let [a1,a2,a3,...e1]=arr2
 
-let [b1,b2,b3,[c1,c2,c3]]=arr3
+// console.log(a1,a2,a3,e1);
 
-console.log(b1,b2,b3,c1,c2,c3);
+
+
+// let arr3 = [10,20,30,[100,200,300]]
+
+// let [b1,b2,b3,[c1,c2,c3]]=arr3
+
+// console.log(b1,b2,b3,c1,c2,c3);
 
 // arr.method manipulate 
 
@@ -822,37 +822,37 @@ console.log(b1,b2,b3,c1,c2,c3);
 // 5. splice
 
 
-let fruit = ["apple","orange","banana"]
+// let fruit = ["apple","orange","banana"]
 
-fruit.push("guava","pomagranate")
-console.log(fruit);
+// fruit.push("guava","pomagranate")
+// console.log(fruit);
 
-let things = ["pencil","pen","paint","board"]
+// let things = ["pencil","pen","paint","board"]
 
-things.pop()
+// things.pop()
 
-console.log(things);
+// console.log(things);
 
 
-let fruits = ["banana","carrot"]
+// let fruits = ["banana","carrot"]
 
-fruits.unshift("apple","apple")
+// fruits.unshift("apple","apple")
 
-console.log(fruits);
+// console.log(fruits);
 
-fruits.shift()
+// fruits.shift()
 
-console.log(fruits);
+// console.log(fruits);
 
 
 
 // splice 
 
-// splice(indexStarting,ending,adding)
+// splice(indexStarting,delete count,adding)
 
 // let add = [100,200,300,400]
 
-// add.splice(0,2,10)
+// add.splice(1,1,10)
 
 // console.log(add);
 
@@ -868,47 +868,47 @@ console.log(fruits);
 // 4.fill
 
 // concat 
-let array1 = [1,2,3,4]
-let array2 = [5,6,7,8]
+// let array1 = [1,2,3,4]
+// let array2 = [5,6,7,8]
 
-let newArr = array1.concat(array2)
+// let newArr = array1.concat(array2)
 
-console.log(newArr);
+// console.log(newArr);
 
 // slice 
 
-let array3 = [10,2,3,4,5]
+// let array3 = [10,2,3,4,5]
 
-let sliceVal = array3.slice(1,5)
+// let sliceVal = array3.slice(0,4)
 
-console.log(sliceVal);
+// console.log(sliceVal);
 
 // flat 
 
-let nestedArr = [1,[2,3,[4,[5,6]]]]
+// let nestedArr = [1,[2,3,[4,[5,6]]]]
 
-let normalArr = nestedArr.flat(Infinity)
+// let normalArr = nestedArr.flat(Infinity)
 
-console.log(normalArr);
+// console.log(normalArr);
 
 // fill 
 
-let  arrr = [10,20,30]
-arrr.fill("gdgdt",1,3)
+// let  arrr = [10,20,30]
+// arrr.fill("gdgdt",1,3)
 
 // fill(addingElement,si, Ei)
 
-console.log(arrr);
+// console.log(arrr);
 
 
 // asscii value 
 
 // sort 
 // 1,111,111111111,2,3456,4,4,5,6,8
-let as = [5,4,6,2,8,1,111,11111111,3426,4,true," ","!"]
+// let as = [5,4,6,2,8,1,111,11111111,3426,4,true," ","!"]
 
-as.sort() 
-console.log(as);
+// as.sort() 
+// console.log(as);
 
 
 // as.reverse()
@@ -916,9 +916,78 @@ console.log(as);
 // console.log(as);
 
 
+// includes 
+
+// let arr1 = [10,20,30,40]
+
+// arr1.includes(10)
+
+// console.log(arr1.includes(12));
+
+// arr to string
+
+// join 
+
+// let arr = [1,2,3,4]
+
+// let strVal = arr.join()
+
+// console.log(strVal);
+
+
+// indexof 
+
+// let Index = [6,3,9,7,87,5,9,5,5,"uygj",0,988]
+
+// let findIndex = Index.indexOf(3,3)
+
+// console.log(findIndex);
+
+// lastIndexOf 
+
+// let LastIndex = Index.lastIndexOf(10,-1)
+// console.log(LastIndex);
 
 
 
 
 
 
+
+
+// higher order method 
+
+// 1.forEach()
+// 2.map()
+
+let fruit = ["apple","orange","banana"]
+
+fruit.forEach(printFruit)
+
+function printFruit(currentElement,index,totalArray){
+    console.log(currentElement,index,totalArray);
+}
+
+
+let fruits = ["apple","banana"]
+
+fruits.map(function(cEle,Index,totArr){
+    console.log(totArr);
+    
+})
+
+
+// difference 
+
+let newArr1 = fruits.forEach((cEle,ind,totalArr) => {
+  return(cEle);
+  
+})
+
+console.log(newArr1);
+let newArr = fruits.map((cEle,ind,totalArr) => {
+  return(cEle);
+  
+})
+
+console.log(newArr);
