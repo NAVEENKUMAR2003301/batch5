@@ -990,4 +990,109 @@ let newArr = fruits.map((cEle,ind,totalArr) => {
   
 })
 
-console.log(newArr);
+console.clear(newArr);
+
+
+// let example = [10,20,30,10,7,17,10]
+
+// let findIndex = example.indexOf(10,0)
+
+// console.log(findIndex);
+
+// let lastIndex = example.lastIndexOf(10,- 1)
+
+// console.log(lastIndex);
+
+
+// 3.filter()
+
+// 4.find()
+
+
+// filter 
+
+// let employees = [
+//   {empName : "abc",salary : 10000},
+//   {empName : "def", salary : 20000},
+//   {empName : "ghi" , salary : 30000}
+// ]
+
+// let highestSalary = employees.filter(cEle => cEle.salary > 10500)
+
+// console.log(highestSalary);
+
+// find 
+
+// let find = employees.find(cEle=>
+//    cEle.salary>10000)
+
+// console.log();
+
+
+// higher order method function 
+
+// 1 sort 
+// 2 some 
+// 3 every 
+
+
+// sort 
+
+let arr = [10,5,100,30,6,2]
+
+arr.sort() 
+
+console.log(arr);
+
+
+let newSort = arr.sort((a,b)=>{
+  return b-a
+})
+
+console.log(newSort);
+
+
+// 2. some - logical or || - true false = true
+
+let arr1 = [1,1,1,1,1]
+
+let value = arr1.some((c,i,ta)=>{
+  return c % 2 == 0
+})
+
+console.log(value);
+
+// 3.every - logical and && - true true = true
+
+let valueAnd = arr1.every((current,ind,toArray)=>{
+return current%2==0
+})
+
+console.log(valueAnd);
+
+
+// reduce  
+
+// adding use to loop 
+
+let arr2 = [1,2,3,4,5]
+
+
+let totalVal = 0
+
+
+for(let i=0;i<arr2.length;i++){
+ totalVal = totalVal + arr2[i]
+}
+
+console.log(totalVal);
+
+
+// reduce syntex 
+
+let total = arr2.reduce((acc,cEle,index,totalArray)=>{
+  return acc + cEle
+},0)
+
+console.log(total);
+
