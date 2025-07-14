@@ -1092,7 +1092,242 @@ console.log(totalVal);
 
 let total = arr2.reduce((acc,cEle,index,totalArray)=>{
   return acc + cEle
-},0)
+},2)
 
-console.log(total);
+console.clear(total);
+
+
+// string method 
+
+
+let b = "javascript"
+
+// charAt - index > character 
+
+
+console.log(b.charAt(b.length-1));
+
+
+// charCodeAt - find asscii value
+
+console.log(b.charCodeAt(1))
+
+// includes 
+
+console.log(b.includes("j",1));
+
+// indexof 
+
+console.log(b.indexOf("a"));
+
+// lastIndexOf 
+
+console.log(b.lastIndexOf("a",));
+
+//repeat 
+
+console.log(b.repeat(6));
+
+
+//replace 
+
+console.log(b.replace("j","Js-j"));
+
+//slice 
+
+console.log(b.slice(2,6));
+
+//split
+
+let c = "i am a iron-man"
+
+console.log(c.split(" "));
+
+// startwITH 
+
+console.log(b.startsWith("j"));
+
+//endwith
+
+console.log(b.endsWith("t"));
+
+// uppercase 
+
+console.log(b.toUpperCase());
+
+//lowercase 
+console.log(b.toLowerCase());
+
+let d = " hello-world "
+
+// trim 
+
+console.log(d.trim());
+
+// trim-left 
+
+console.log(d.trimStart());
+
+// trim -right 
+
+console.clear(d.trimEnd());
+
+
+// math - object
+// n-p
+
+let e = Math.abs(-1000)
+console.log(e);
+
+// n=-1, p=+1
+e=Math.sign(-1000)
+console.log(e);
+
+
+e=Math.sqrt(25)
+console.log(e);
+
+
+
+e=Math.cbrt(8)
+console.log(e);
+
+// pow - (num,power) = print 
+
+e=Math.pow(7,6)
+console.log(e);
+
+// min -  noted and print min num /
+
+
+e=Math.min(7,6,8,2)
+console.log(e);
+
+// max - noted the list print max num 
+
+e=Math.max(7,6,8,2)
+console.log(e);
+
+// random - print random num 
+
+e = Math.random()*10+1
+console.log(e);
+
+// ceil - max - value print dec 
+
+e = Math.ceil(2.4)
+console.log(e);
+
+// floor - min value print decimal 
+
+e = Math.floor(2.3)
+console.log(e);
+
+// round - 0 to 4 min val 5-9 max val decimal 
+
+e = Math.round(2.5)
+console.log(e);
+
+
+// trunc - decimal remove /
+
+
+e = Math.trunc(7.008989898989878)
+console.clear(e);
+
+
+
+// date object 
+
+
+let date = new Date
+
+console.log(date);
+
+// year 
+
+console.log(date.getFullYear());
+
+//month
+
+console.log(date.getMonth()+1);
+
+//date 
+
+console.log(date.getDate());
+
+//day
+
+console.log(date.getDay());
+
+//hours
+
+console.log(date.getHours());
+
+//minutes
+
+console.log(date.getMinutes());
+
+console.log(date.getSeconds());
+
+
+
+
+
+// manipulation of date 
+date.setFullYear(2000)
+console.log(date);
+
+date.setMonth(8)
+
+console.log(date);
+
+console.log(date.toDateString());
+console.log(date.toISOString());
+console.log(date.toLocaleString());
+console.log(date.toLocaleTimeString());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
