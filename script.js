@@ -1286,6 +1286,101 @@ console.log(date.toDateString());
 console.log(date.toISOString());
 console.log(date.toLocaleString());
 console.log(date.toLocaleTimeString());
+console.clear();
+
+
+// asynchronous and  synchronous 
+
+
+function one(){
+  console.log("one");
+  
+}
+function two(){
+  console.log("two");
+  
+}
+function three(){
+  console.log("three");
+  
+}
+
+one()
+// setTimeout(two,500)
+three()
+
+for(let i=1;i<11;i++){
+  console.log(i);
+  
+}
+
+// setTimeout(()=>{
+//   let time  = new Date
+
+// let timeOnly = time.toLocaleTimeString()
+
+// console.log(timeOnly);
+// },1000)
+// setInterval(()=>{
+//   let time  = new Date
+
+// let timeOnly = time.toLocaleTimeString()
+
+// console.log(timeOnly);
+// },1000)
+
+
+// promise - micro task
+
+// 1.resolve. 
+// 2.reject .
+// 3.bending 
+
+
+let newPromise = new Promise((resolve,reject,bending)=>{
+let dataRecevied = true;
+  if(dataRecevied){
+    resolve("data received successfully")
+  }else{
+    reject("data not received")
+  }
+})
+
+newPromise
+.then((message)=>{
+   console.log(`finally result : ${message}`);
+   
+})
+.catch((error)=>{
+console.log(`finally result : ${error}`);
+})
+
+.finally(()=>{
+  console.log("end");
+  
+})
+
+
+// api calling method 
+
+fetch('https://fakestoreapi.com/products/1')
+
+.then((responce)=>{
+  return responce.json()
+})
+.then((data)=>{
+  console.log(data);
+  
+})
+.catch((error)=>{
+  console.log(error);
+  
+})
+
+
+
+
+
 
 
 
