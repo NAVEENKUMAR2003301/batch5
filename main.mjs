@@ -1,12 +1,10 @@
-import { loginData } from "./login.mjs";
-import { signUp } from "./signup.mjs";
+import  loginData  from "./login.mjs";
 
 
 
-
-function evaluate(){
-    console.log(loginData);
-    console.log(signUp);   
+function calli(){
+   console.log(loginData);
+   
 }
 
-evaluate()
+calli()
